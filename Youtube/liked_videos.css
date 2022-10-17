@@ -7,32 +7,46 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+i{
+    cursor: pointer;
+    color: white;
+}
 #topbar {
     position: fixed;
     z-index: 10000;
     width: 100%;
     top: 0;
-    background-color: #282828;
+    background-color: #202020;
 }
 #topbar-content{
-    height: 60px;
+    height: 56px;
     padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
-#left{
+#topbar-left{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+#menu-button{
+    height: 40px;
+    padding: 7px;
+}
+#menu-button-icon{
+    font-size: 28px;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 #topbar-logo{
     width: 129px;
     display: flex;
     flex-direction: row;
     padding: 18px 14px 18px 16px;
+    cursor: pointer;
 }
-
 #yt-logo-img{
     width: 90px;
     height: 20px;
@@ -40,16 +54,80 @@ body {
 #country-code{
     color: #aaaaaa;
     font-size: 10px;
-    margin: -10px 0 0 2px;
+    margin: -5px 0 0 4px;
 }
-#guide-button{
+#topbar-center{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 728px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#search-input{
+    width: 538px;
+    height: 40px;
+    padding: 2px 6px;
+    margin-left: 34px;
+
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #121212;
+    color: #F9F9F9;
+
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #303030;
+    border-right: none;
+}
+#search-input:focus {
+    outline: none;
+    border:1px solid #3ea6ff;
+    padding-left: 20px;
+}
+#search-button{
+    border: 1px solid #323232;
+    background-color: #323232;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    height: 40px;
+    width: 64px;
+    margin: 0;
+    padding: 5px 6px 1px 6px;
+}
+#search-button-icon{
+    font-size: 25px;
+}
+#mic{
+    margin-left: 8px;
+    border-radius: 100px;
+    background-color: #181818;
     width: 40px;
+    height: 40px;
+    padding: 10px;
 }
-#guide-button-icon{
-    color: #FFFFFF;
-    cursor:pointer;
-    margin-bottom: auto;
-    margin-top: auto;
+#mic-icon{
+    font-size: 21px;
+}
+
+#topbar-right{
+    min-width: 225px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+.topbar-right-icons{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+.topbar-right-icons:not(:last-child){
+    margin-right: 8px;
+}
+.topbar-right-icons:last-child{
+    width: 60px;
+    height: 34px;
+    padding: 1px 14px;
 }
 #menu{
     position: fixed;
@@ -60,3 +138,5 @@ body {
     width: 100%;
     height: 500px;
 }
+
+
